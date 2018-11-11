@@ -80,5 +80,5 @@ docker build -t nodered_dat159:v1 .
 Then run it, see [node-red-docker repo on docker hub](https://hub.docker.com/r/nodered/node-red-docker/) for more info on parameters
 
 ```shell
-docker run -it -p 1880:1880 -v ~/.node-red:/data --name mynodered nodered/node-red-docker
+docker run -it -p 1880:1880 -v ~/.node-red:/data --name nodered_dat159 nodered_dat159:v1
 ```
