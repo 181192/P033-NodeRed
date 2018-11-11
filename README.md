@@ -68,3 +68,17 @@ noderedvirtual_grafana_1    /run.sh                          Up (healthy)       
 noderedvirtual_influxdb_1   /entrypoint.sh influxd           Up (healthy)            8086/tcp
 noderedvirtual_nodered_1    npm start -- --userDir /data     Up (health: starting)   0.0.0.0:1880->1880/tcp
 ```
+
+## Run only the Node-RED custom image
+
+First build the image
+
+```shell
+docker build -t nodered_dat159:v1 .
+```
+
+Then run it, see [node-red-docker repo on docker hub](https://hub.docker.com/r/nodered/node-red-docker/) for more info on parameters
+
+```shell
+docker run -it -p 1880:1880 -v ~/.node-red:/data --name mynodered nodered/node-red-docker
+```
