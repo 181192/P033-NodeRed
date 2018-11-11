@@ -24,10 +24,28 @@ List of plugins:
 ## How to run
 
 ```shell
-docker-compose run -d
+docker-compose up
 ```
 
 Node-RED accessable at `http://localhost:1880`, Adminer at `http://localhost:8080` and Grafana at `http://localhost:3000`.
+
+Or to run in detach mode
+
+```shell
+docker-compose up -d
+```
+
+Attach to logs
+
+```shell
+docker-compose logs
+```
+
+Shutdown
+
+```shell
+docker-compose down
+```
 
 ## Enviroments variables
 
