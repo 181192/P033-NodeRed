@@ -38,7 +38,7 @@ docker-compose up -d
 Attach to logs
 
 ```shell
-docker-compose logs
+docker-compose logs -tf
 ```
 
 Shutdown
